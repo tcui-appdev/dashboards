@@ -1,0 +1,12 @@
+<h1>Convert <%= @from_sym%></h1>
+
+<p>Go <a href="/">back</a>.</p>
+
+<ul>
+  <% @sym_array.each do |sym| %>
+    <li>
+      <a href="/forex/<%= @from_sym%>/<%= sym %>">
+        Convert 1 <%= @from_sym %> to <%= sym %>
+      </a>
+  <% end %>
+</ul>
